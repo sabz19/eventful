@@ -1,0 +1,48 @@
+.calendar-container{
+    height:100vh;
+    width:auto;
+    display:flex;
+    justify-content: center;
+}
+
+.image-container{
+    display:flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+.event-image{
+    height: 25vh;
+    width: 30vh;
+}
+
+.events-container{
+    justify-content: center;
+    vertical-align: middle;
+    width:100vh;
+    border:1px solid lightgray;
+}
+ul{
+    padding:0;
+}
+.listview{
+    align-items: center;
+    vertical-align: middle;
+}
+
+.listItem{
+    list-style-type: none;
+    height: 10vh;
+    border-bottom:1px solid lightgray;
+    background-color: rgb(249, 249, 249);
+    margin-bottom:10px;
+}
+
+.listItem:hover {
+    cursor: pointer;
+    background-color: rgb(245, 245, 245);
+    transition: 0.5s;
+}
+
+.listItemContainer{
+
+}

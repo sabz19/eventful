@@ -1,0 +1,33 @@
+.topbarcontainer{
+    background-color: #9939ff;
+    overflow: hidden;
+    height:10vh;
+    width:100%;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: left;
+    vertical-align: middle;
+    border:1px solid black;
+    box-shadow: 1px 10px;
+    margin-bottom: 30px;
+}
+
+.alignmiddle{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.links{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+
+}
+
+.textclass{
+    color:blue;
+    text-align:center;
+    vertical-align: middle;
+}
+
