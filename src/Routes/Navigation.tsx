@@ -6,6 +6,7 @@ function Navigation(){
         <Router>
             <Link to="/"> Home </Link>
             <Link to="/about"> About </Link>
+            <Link to="/event/:eventid"> Event </Link>
         </Router>
     );
 }

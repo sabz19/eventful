@@ -1,8 +1,8 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider, Route, BrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Routes/Home/Home';
 import About from './Routes/About/About';
-import Navigation from './Routes/Navigation';
+import EventDetails from './Routes/Event/EventDetails';
 
 const router = createBrowserRouter([
     {
@@ -13,13 +13,21 @@ const router = createBrowserRouter([
         path:'/about',
         element:<About />,
     },
+    {
+        path:'/event/:eventId',
+        element:<EventDetails />
+    },
+    {
+        path:'/event',
+        element:<EventDetails />
+    }
 ]);
 
 function App(){
     return (
     <div>
         <RouterProvider router={router} />
-        <Navigation />
+        {/* <Navigation /> */}
     </div>
     );
     

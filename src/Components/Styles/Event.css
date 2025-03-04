@@ -1,0 +1,26 @@
+.event-container{
+    display:flex;
+    align-items: center;
+    vertical-align: middle;
+    flex-direction: column;
+}
+
+.event-image-container{
+    height: 10px;
+    width: 10px;
+}
+
+.event-image-container{
+
+}
+
+.like-dislike-container{
+    display:inline-block;
+}
+.like-dislike-button{
+    background-color: transparent;
+    cursor: pointer;
+    color:#626262;
+    border: none;
+    font-size:1.8em;
+}
