@@ -42,7 +42,7 @@ function Calendar(){
                         onMouseEnter={ () => setMainImage(key.image)}> 
                             <img className="img-list-view"src={key.image}/>
                             <span className="event-title"> {key.event}  </span>
-                            <span className="event-date"> { key.date.toString() } </span>
+                            {/* <span className="event-date"> { key.date.toString() } </span> */}
                             <p className="event-summary">{key.summary} </p>
                         </div> 
                     </div>)}

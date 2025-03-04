@@ -19,8 +19,12 @@
 .events-container{
     display:flex;
     flex-direction: column;
-    width:100vh;
-    border:px solid lightgray;
+    width:120vh;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 10px rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(88, 0, 176), rgb(41, 0, 102));
+    border-radius: 50px 50px 50px 5px;
 }
 ul{
     padding:0;
@@ -33,6 +37,7 @@ ul{
 .event-title{
     font-size:1.5em;
     padding-left:30px;
+    color:rgb(215, 215, 215);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
@@ -57,14 +62,15 @@ ul{
 .listItem{
     list-style-type: none;
     border-bottom:1px solid lightgray;
-    background-color: rgb(255, 255, 255);
-    margin-bottom:15px;
-    box-shadow: 0 3px 10px rgb(199, 199, 199);
+    background-color: rgba(212, 180, 255, 0.179);
+    margin-bottom:30px;
+    width:90%;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .listItem:hover {
     cursor: pointer;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(149, 0, 255);
     transition: 0.5s;
 }
 
