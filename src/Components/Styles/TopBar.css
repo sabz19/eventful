@@ -1,16 +1,22 @@
 .topbarcontainer{
-    background-color: #9939ff;
+    background-color: #9e58ff;
     overflow: hidden;
     height:10vh;
     width:100%;
     display:flex;
     text-align: center;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     vertical-align: middle;
     border:1px solid black;
     box-shadow: 1px 10px;
     margin-bottom: 30px;
+}
+
+.top-bar-title{
+    font-size: 1.5em;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 .alignmiddle{

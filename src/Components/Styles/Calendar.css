@@ -1,5 +1,5 @@
 .calendar-container{
-    height:100vh;
+    height:auto;
     width:auto;
     display:flex;
     justify-content: center;
@@ -13,13 +13,14 @@
 .event-image{
     height: 25vh;
     width: 30vh;
+    margin-bottom:10px;
 }
 
 .events-container{
-    justify-content: center;
-    vertical-align: middle;
+    display:flex;
+    flex-direction: column;
     width:100vh;
-    border:1px solid lightgray;
+    border:px solid lightgray;
 }
 ul{
     padding:0;
@@ -29,12 +30,36 @@ ul{
     vertical-align: middle;
 }
 
+.event-title{
+    font-size:1.5em;
+    padding-left:30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.event-date{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.event-summary{
+    font-size: 1em;
+    padding-left: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+}
+.img-list-view{
+    height:50px;
+    width:50px;
+    clip-path: circle();
+    padding-left:10px;
+    padding-top: 10px;
+}
 .listItem{
     list-style-type: none;
-    height: 10vh;
     border-bottom:1px solid lightgray;
-    background-color: rgb(249, 249, 249);
-    margin-bottom:10px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom:15px;
+    box-shadow: 0 3px 10px rgb(199, 199, 199);
 }
 
 .listItem:hover {
@@ -43,6 +68,10 @@ ul{
     transition: 0.5s;
 }
 
-.listItemContainer{
+.list-item-container{
+    transition: 0.5s;
+}
 
+.list-item-container:hover{
+    margin-top:-5px;
 }

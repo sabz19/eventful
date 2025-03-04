@@ -4,10 +4,11 @@ import '../Styles/TopBar.css'
 function TopBar(){
     return (
         <div className="topbarcontainer">
-            <p className="links">
+            <span className="top-bar-title"> South East Florida Events </span>
+            {/* <p className="links">
                 <a className="about" href="#about">About</a>
                 <a className="teachers" href="#teachers"> Teachers </a>
-            </p>
+            </p> */}
         </div>
     );
 }

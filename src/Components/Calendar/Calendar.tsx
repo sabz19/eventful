@@ -32,22 +32,20 @@ function Calendar(){
     }, []);
     return (
         <div className="calendar-container">
-
             <div className="events-container"> 
                 <div className="image-container">
                     <img className="event-image" src={mainImage}/>
                 </div>
-                <ul className='listView'> 
                     {eventData.map((key) => 
-                    <li className="listItem"> 
-                        <div className="listItemContainer"
+                    <div className="listItem"> 
+                        <div className="list-item-container"
                         onMouseEnter={ () => setMainImage(key.image)}> 
-                            <img src={key.image}/>
-                            {key.event} {key.date.toString()}
-                            <p>{key.summary} </p>
+                            <img className="img-list-view"src={key.image}/>
+                            <span className="event-title"> {key.event}  </span>
+                            <span className="event-date"> { key.date.toString() } </span>
+                            <p className="event-summary">{key.summary} </p>
                         </div> 
-                    </li>)}
-                </ul>
+                    </div>)}
             </div>
         </div>
     )
