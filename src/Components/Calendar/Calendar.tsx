@@ -10,6 +10,7 @@ function Calendar(){
     
     const [eventData, setData] = useState<Events[]>([]);
     const [mainImage, setMainImage] = useState<string>();
+    const calendarImage = './assets/images/calendar.png';
 
     useEffect(()=> {
         async function getEvents(){
@@ -34,18 +35,22 @@ function Calendar(){
         <div className="calendar-container">
             <div className="events-container"> 
                 <div className="image-container">
-                    <img className="event-image" src={mainImage}/>
+                    <img className="event-image" src={ mainImage }/>
                 </div>
-                    {eventData.map((key) => 
+                <div className="calendar-image-container">
+                    <img className="calendar-image" src={ calendarImage }/>
+                </div>
+                {eventData.map((key) => 
                     <div className="listItem"> 
                         <div className="list-item-container"
                         onMouseEnter={ () => setMainImage(key.image)}> 
-                            <img className="img-list-view"src={key.image}/>
-                            <span className="event-title"> {key.event}  </span>
+                            <img className="img-list-view"src={ key.image }/>
+                            <span className="event-title"> { key.event }  </span>
                             {/* <span className="event-date"> { key.date.toString() } </span> */}
-                            <p className="event-summary">{key.summary} </p>
+                            <p className="event-summary">{ key.summary } </p>
                         </div> 
-                    </div>)}
+                    </div>)
+                }
             </div>
         </div>
     )
