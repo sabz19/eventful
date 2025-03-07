@@ -43,7 +43,7 @@ function Calendar(){
                 {eventData.map((key) => 
                     <div className="listItem"> 
                         <div className="list-item-container"
-                        onMouseEnter={ () => setMainImage(key.image)}> 
+                            onMouseEnter={ () => setMainImage(key.image)}> 
                             <img className="img-list-view"src={ key.image }/>
                             <span className="event-title"> { key.event }  </span>
                             {/* <span className="event-date"> { key.date.toString() } </span> */}

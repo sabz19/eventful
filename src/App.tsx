@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Routes/Home/Home';
 import About from './Routes/About/About';
@@ -25,6 +25,10 @@ const router = createBrowserRouter([
 ]);
 
 function App(){
+    useEffect(() => {
+        document.body.style.backgroundColor = 'darkpink'; // Replace 'lightblue' with your desired color
+      }, []);
+
     return (
     <div>
         <RouterProvider router={router} />
