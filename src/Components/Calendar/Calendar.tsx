@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../Styles/Calendar.css';
 import Events from './Events';
+import images from '../Images/Images';
 
 /**
  * Populate the list of events from the server
@@ -37,7 +38,7 @@ function Calendar(){
         <div className="calendar-container">
             <div className="events-container"> 
                 <div className="image-container">
-                    <img className="event-image" src={ mainImage }/>
+                    <img className="event-image" src={ mainImage? mainImage:images.aolLogo }/>
                 </div>
                 <div className="calendar-image-container">
                     <img className="calendar-image" src={ calendarImage }/>
