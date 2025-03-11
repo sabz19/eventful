@@ -16,7 +16,7 @@ function Calendar(){
 
     useEffect(()=> {
         async function getEvents(){
-            const url = `http://localhost:3000/api/data/events`;
+            const url = `${process.env.API_BASE_URI}/api/data/events`;
             const response = await fetch(url);
             const res = await response.json();
             const eventDetails: Events[] = res.events.map((event: any)=>({
@@ -28,11 +28,9 @@ function Calendar(){
                 description: event.description
             }));
 
-            console.log(eventDetails);
             setData(eventDetails);
         }
         getEvents();
-        console.log(eventData);
     }, []);
     return (
         <div className="calendar-container">
