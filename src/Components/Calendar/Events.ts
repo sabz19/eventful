@@ -4,6 +4,7 @@ interface Event {
     event: string,
     date: Date
     summary: string,
+    description: string
 }
 
 export default Event;

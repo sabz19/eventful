@@ -24,6 +24,7 @@ function Calendar(){
                 image: event.image,
                 date: event.date,
                 summary: event.summary,
+                description: event.description
             }));
 
             console.log(eventDetails);
@@ -43,7 +44,7 @@ function Calendar(){
                 </div>
                 {eventData.map((key) => 
                     <div className="listItem"> 
-                    <Link to='/event/{key}' style={{ textDecoration: 'none' }}>
+                    <Link to={{ pathname:`/event/${key.id}`}} state={{key}} style={{ textDecoration: 'none'}}>
                         <div className="list-item-container"
                             onMouseEnter={ () => setMainImage(key.image)}> 
                             <img className="img-list-view"src={ key.image }/>
