@@ -13,11 +13,17 @@
 .event-header{
     color: #d7d7d7;
     font-size: 1.8em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .event-description{
     color:#d7d7d7;
-    font-size: 1.1em;
+    font-size: 1.0em;
+    padding:10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .event-image-container{
@@ -34,7 +40,7 @@
     cursor: pointer;
     color:#d7d7d7;
     border: none;
-    font-size:3.0em;
+    font-size: 4.0em;
 }
 
 .dislike-button{
@@ -42,14 +48,14 @@
     cursor: pointer;
     color:#d7d7d7;
     border: none;
-    font-size:3.0em;
+    font-size: 4.0em;
     transform: rotateY(180deg);
 }
 
 .like-button:hover{
-    color: #fffb00;
+    color: #fffead;
 }
 
 .dislike-button:hover{
-    color: #fffb00;
+    color: #fffead;
 }

@@ -36,7 +36,7 @@ function Calendar(){
         <div className="calendar-container">
             <div className="events-container"> 
                 <div className="image-container">
-                    <img className="event-image" src={ mainImage? mainImage:images.aolLogo }/>
+                    <img className="event-image" src={ mainImage }/>
                 </div>
                 <div className="calendar-image-container">
                     <img className="calendar-image" src={ calendarImage }/>

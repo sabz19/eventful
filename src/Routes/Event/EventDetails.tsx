@@ -1,9 +1,9 @@
 import React from 'react';
 import { useParams, useLocation } from 'react-router-dom';
+import ThumbsButton from '../../Components/Events/ThumbsButton';
 import '../../Components/Styles/Event.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 import 'animate.css/animate.min.css';
+
 
 function EventDetails(){
     const location = useLocation();
@@ -19,8 +19,8 @@ function EventDetails(){
             <h1 className="event-header"> { location.state.key.event }</h1>
             <p className="event-description"> { location.state.key.description } </p>
             <div className="like-dislike-container">
-                <button className="like-button animate__animated animate__bounce"><FontAwesomeIcon icon={faThumbsUp}></FontAwesomeIcon></button>
-                <button className="dislike-button"><FontAwesomeIcon icon={faThumbsDown}></FontAwesomeIcon></button>
+                <ThumbsButton thumbsUp={true} />
+                <ThumbsButton thumbsDown={true} />
             </div>
         </div>
 
