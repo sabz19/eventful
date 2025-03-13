@@ -19,6 +19,6 @@
 </div>
 
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,kubernetes,docker,react" />
+    <img src="https://skillicons.dev/icons?i=git,kubernetes,docker,react,azure" />
   </a>
 </p>
