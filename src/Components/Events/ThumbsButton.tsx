@@ -13,7 +13,7 @@ function ThumbsButton(props:any) {
 
     return(
         <div onClick={ handleButtonClick }
-            className={isSelected? 'animate__animated animate__bounce': ''}
+            className={isSelected? 'animate__animated animate__tada': ''}
         >
             <button className={props.ThumbsUp? "like-button":"dislike-button"}><FontAwesomeIcon icon={props.thumbsUp? faThumbsUp: faThumbsDown}></FontAwesomeIcon></button>
         </div>
