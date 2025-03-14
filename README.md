@@ -1,7 +1,7 @@
 # Eventful
 
-### PWA for South Florida users to sign up for events!
-
+### Progressive Web App for showcasing events
+### AI Powered Events Calendar for people in SEFL to keep track of the latest events
 ### 
 
 
