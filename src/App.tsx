@@ -26,7 +26,7 @@ const router = createBrowserRouter([
 
 function App(){
     useEffect(() => {
-        document.body.style.backgroundColor = 'darkpink'; // Replace 'lightblue' with your desired color
+        document.body.style.backgroundColor = 'darkpink'; //
       }, []);
 
     return (
