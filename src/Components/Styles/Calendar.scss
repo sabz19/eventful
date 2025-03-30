@@ -1,3 +1,11 @@
+$breakpoint-ipad-mini: 768px;
+$breakpoint-ipad: 1024px;
+$breakpoint-ipad-pro: 1366px;
+$breakpoint-iphone-pro-max: 430px;
+$breakpoint-iphone-pro: 390px;
+$breakpoint-iphone-x: 360px;
+$breakpoint-iphone-x-small: 320px;
+
 .calendar-container{
     height:auto;
     width:auto;
@@ -101,14 +109,7 @@ ul{
 }
 
 
-@media (max-width: 430px){
-
-    .calendar-image-container{
-        align-items: left;
-        justify-content: left;
-        margin-right: auto;
-        margin-left: 20px;
-    }
+@media (max-width: $breakpoint-iphone-pro-max) {
 
     .calendar-image {
         height: 10vh;
@@ -141,15 +142,8 @@ ul{
     }
 }
 
-@media (max-width:390px){
+@media (max-width:$breakpoint-iphone-pro){
     
-    .calendar-image-container{
-        align-items: left;
-        justify-content: left;
-        margin-right: auto;
-        margin-left: 20px;
-    }
-
     .calendar-image {
         height: 10vh;
         width: 22vw;
@@ -172,23 +166,9 @@ ul{
         width: 60vw;
         margin-bottom:10px;
     }
-
-    .calendar-image{
-        height: 8vh;
-        width: 15vw;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
 }
 
-@media (max-width: 360px){
-
-    .calendar-image-container{
-        align-items: left;
-        justify-content: left;
-        margin-right: auto;
-        margin-left: 20px;
-    }
+@media (max-width: $breakpoint-iphone-x) {
 
     .calendar-image {
         height: 10vh;
@@ -211,13 +191,5 @@ ul{
         height: 20vh;
         width: 35vw;
         margin-bottom:10px;
-    }
-
-    .calendar-image{
-        height: 8vh;
-        width: 15vw;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-    
+    }    
 }
