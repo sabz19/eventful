@@ -59,3 +59,12 @@
 .dislike-button:hover{
     color: #fffead;
 }
+
+.back-button{
+    background-color: transparent;
+    cursor: pointer;
+    color:#c7c7c7;
+    border: none;
+    font-size: 2.5em;
+    margin-left:auto;
+}
