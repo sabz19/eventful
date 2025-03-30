@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, useLocation } from 'react-router-dom';
 import ThumbsButton from '../../Components/Events/ThumbsButton';
 import BackButton from '../../Components/Events/BackButton';
-import '../../Components/Styles/Event.css';
+import '../../Components/Styles/Event.scss';
 import 'animate.css/animate.min.css';
 
 

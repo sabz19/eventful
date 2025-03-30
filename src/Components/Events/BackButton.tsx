@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import 'animate.css';
-import '../Styles/Calendar.css';
+import '../Styles/Calendar.scss';
 
 /**
  * Basic functionality to implement a back button to go to the Home page 

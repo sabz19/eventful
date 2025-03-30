@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../Styles/Calendar.css';
+import '../Styles/Calendar.scss';
 import Events from './Events';
-import images from '../Images/Images';
 
 /**
  * Populate the list of events from the server
