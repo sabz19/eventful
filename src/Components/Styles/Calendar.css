@@ -141,6 +141,45 @@ ul{
     }
 }
 
+@media (max-width:390px){
+    
+    .calendar-image-container{
+        align-items: left;
+        justify-content: left;
+        margin-right: auto;
+        margin-left: 20px;
+    }
+
+    .calendar-image {
+        height: 10vh;
+        width: 22vw;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .event-title{
+        font-size: 1.1em;
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    .event-summary{
+        font-size: 0.5 em;
+    }
+
+    .event-image{
+        height: 25vh;
+        width: 60vw;
+        margin-bottom:10px;
+    }
+
+    .calendar-image{
+        height: 8vh;
+        width: 15vw;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
 
 @media (max-width: 360px){
 
