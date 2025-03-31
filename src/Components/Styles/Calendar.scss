@@ -21,10 +21,7 @@ $breakpoint-iphone-x-small: 320px;
 }
 
 .calendar-image-container{
-    align-items: left;
-    justify-content: left;
-    margin-right: auto;
-    margin-left: 50px;
+    margin: auto;
 }
 
 .calendar-image{
@@ -37,7 +34,7 @@ $breakpoint-iphone-x-small: 320px;
 .event-image{
     height: 25vh;
     width: 30vh;
-    margin-bottom:10px;
+    margin-bottom:20px;
 }
 
 .events-container{
@@ -50,6 +47,16 @@ $breakpoint-iphone-x-small: 320px;
     background-image: linear-gradient(rgb(244, 244, 244), rgb(255, 255, 255));
     border-radius: 50px 50px 50px 50px;
 }
+
+.list-item-container{
+    transition: 0.5s;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 ul{
     padding:0;
 }
@@ -58,32 +65,40 @@ ul{
     vertical-align: middle;
 }
 
+.img-list-view{
+    height:30px;
+    width:30px;
+    clip-path: circle();
+    text-align: left;
+    align-self:start;
+    margin-left:10px;
+    margin-top:10px;
+}
+
 .event-title{
-    font-size:1.5em;
-    padding-left:30px;
-    color:rgb(0, 0, 0);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.0em;
+    color:rgb(50, 50, 50);
+    font-family:Georgia, 'Times New Roman', Times, serif;
     text-align: center;
+    word-break: break-all;
+    align-items: flex-start;
+    margin-top:15px;
+    flex-basis: 50%;
 }
 
 .event-date{
-    justify-content: flex-end;
-    align-items: flex-end;
+    font-size: 0.3em;
+    text-align: right;
+    padding-right:10px;
 }
 
 .event-summary{
-    font-size: 1em;
-    padding-left: 30px;
+    font-size: 0.9em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: gray;
+    text-align: center;
 }
-.img-list-view{
-    height:50px;
-    width:50px;
-    clip-path: circle();
-    padding-left:10px;
-    padding-top: 10px;
-}
+
 .listItem{
     list-style-type: none;
     border-bottom:1px solid lightgray;
@@ -97,10 +112,6 @@ ul{
 .listItem:hover {
     cursor: pointer;
     background-color: rgb(241, 241, 241);
-    transition: 0.5s;
-}
-
-.list-item-container{
     transition: 0.5s;
 }
 

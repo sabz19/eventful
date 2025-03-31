@@ -43,13 +43,17 @@ function Calendar(){
                 {eventData.map((key) => 
                     <div className="listItem"> 
                     <Link to={{ pathname:`/event/${key.id}`}} state={{key}} style={{ textDecoration: 'none'}}>
+                    <div>
                         <div className="list-item-container"
                             onMouseEnter={ () => setMainImage(key.image)}> 
                             <img className="img-list-view"src={ key.image }/>
-                            <span className="event-title"> { key.event }  </span>
+                            <span className="event-title"> { key.event.toString() }  </span>
+                            <span className="event-date"> { key.date.toString() } </span>
                             {/* <span className="event-date"> { key.date.toString() } </span> */}
-                            <p className="event-summary">{ key.summary } </p>
                         </div>
+                            <p className="event-summary">{ key.summary } </p>
+                    </div>
+
                     </Link> 
                     </div>)
                 }
