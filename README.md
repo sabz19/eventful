@@ -3,6 +3,10 @@
 ### IOS app with Capacitor plugin integration written in REACT JS
 ### AI Powered Events Calendar for people in SEFL to keep track of the latest events
 ### 
+<span>
+    <img src="./screenshots/Simulator_Shot_1.png" width="220">
+    <img src="./screenshots/Simulator_Shot_2.png" width="220">
+</span>
 
 
 <div align="center">
