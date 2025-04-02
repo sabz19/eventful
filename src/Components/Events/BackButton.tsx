@@ -19,7 +19,7 @@ function BackButton(props:any) {
         navigate(-1);
     }
     return(
-        <div>
+        <div className="back-button-container">
             <span onClick={handleBackButtonClick} className="back-button">
                 <FontAwesomeIcon icon={ faArrowLeft }></FontAwesomeIcon>
             </span>

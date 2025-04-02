@@ -1,3 +1,17 @@
+
+.back-button-container{
+    margin-top:50px;
+}
+
+.back-button{
+    background-color: transparent;
+    cursor: pointer;
+    color:#c7c7c7;
+    border: none;
+    font-size: 2.2em;
+    margin-left:auto;
+}
+
 .event-container{
     display:flex;
     align-items: center;
@@ -14,6 +28,7 @@
     color: #d7d7d7;
     font-size: 1.8em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 
 .event-description{
@@ -60,12 +75,3 @@
     color: #fffead;
 }
 
-.back-button{
-    background-color: transparent;
-    cursor: pointer;
-    color:#c7c7c7;
-    border: none;
-    font-size: 2.5em;
-    margin-left:auto;
-    margin-top:30px;
-}
