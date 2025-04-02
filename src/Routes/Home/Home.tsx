@@ -6,8 +6,11 @@ import Calendar from '../../Components/Calendar/Calendar';
 function Home(){
     return (
         <div className="home">
-            <TopBar />
-            <Calendar />
+            <div className="home-container">
+                <TopBar />
+                <Calendar />
+            </div>
+
         </div>
 
     );

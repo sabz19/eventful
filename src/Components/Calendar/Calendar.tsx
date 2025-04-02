@@ -12,6 +12,7 @@ function Calendar(){
     const [eventData, setData] = useState<Events[]>([]);
     const [mainImage, setMainImage] = useState<string>();
     const calendarImage = './assets/images/calendar.png';
+    const aolLogo = './assets/images/lotus.svg';
 
     useEffect(()=> {
         async function getEvents(){
@@ -35,7 +36,7 @@ function Calendar(){
         <div className="calendar-container">
             <div className="events-container"> 
                 <div className="image-container">
-                    <img className="event-image" src={ mainImage }/>
+                    <img className="event-image" src={ mainImage ? mainImage: aolLogo }/>
                 </div>
                 <div className="calendar-image-container">
                     <img className="calendar-image" src={ calendarImage }/>
